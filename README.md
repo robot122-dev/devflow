@@ -33,17 +33,22 @@
 
 ## Preview
 
-> После завершения проекта здесь будут размещены скриншоты интерфейса.
+![DevFlow Preview](./screenshots/preview.png)
 
-```text
-┌──────────────────────────────────────┐
-│              DevFlow                 │
-│                                      │
-│   Modern React Landing Page          │
-│                                      │
-│  Responsive • Fast • Modern          │
-└──────────────────────────────────────┘
-```
+---
+
+## Features
+
+- Современный SaaS-интерфейс
+- Полностью адаптивный дизайн
+- React Hooks
+- React Hook Form + Zod
+- Lenis Smooth Scroll
+- React Modal
+- Cookie Consent Banner
+- Политика конфиденциальности
+- Компонентная архитектура
+- Оптимизированная структура проекта
 
 ---
 
@@ -65,14 +70,50 @@
 ```text
 src
 ├── assets
+│   ├── images
+│   │   ├── about.png
+│   │   └── hero-laptop.png
+│   ├── hero.png
+│   └── vite.svg
+│
 ├── components
-│   ├── Header.jsx
-│   ├── Hero.jsx
-│   ├── Features.jsx
 │   ├── About.jsx
 │   ├── Contacts.jsx
-│   └── Footer.jsx
+│   ├── CookieBanner.jsx
+│   ├── Features.jsx
+│   ├── Footer.jsx
+│   ├── Header.jsx
+│   ├── Hero.jsx
+│   ├── Modal.jsx
+│   ├── PrivacyModal.jsx
+│   └── ScrollToTop.jsx
+│
+├── hooks
+│   └── useScrollTo.js
+│
+├── lib
+│   └── lenis.js
+│
+├── schemas
+│   └── contactSchema.js
+│
 ├── styles
+│   ├── components
+│   │   ├── about.css
+│   │   ├── contacts.css
+│   │   ├── cookie-banner.css
+│   │   ├── features.css
+│   │   ├── footer.css
+│   │   ├── header.css
+│   │   ├── hero.css
+│   │   └── modal.css
+│   │
+│   ├── global.css
+│   └── styles.css
+│
+├── utils
+│   └── contactService.js
+│
 ├── App.jsx
 └── main.jsx
 ```
@@ -111,11 +152,14 @@ npm run build
 ## Goals
 
 - [x] Инициализация проекта
-- [ ] Разработка интерфейса
-- [ ] Создание компонентов
-- [ ] Адаптивная верстка
-- [ ] Тестирование
-- [ ] Финальная сборка
+- [x] Разработка интерфейса
+- [x] Создание компонентов
+- [x] Адаптивная верстка
+- [x] Валидация формы
+- [x] Плавный скролл
+- [x] Cookie Banner
+- [x] Модальные окна
+- [x] Финальная сборка
 
 ---
 
